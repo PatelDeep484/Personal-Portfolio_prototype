@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deep Patel Final Project WEB222</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <script src="./script/script.js"></script>
+  </head>
+  <body>
+    <header class="menubar">
+      <nav class="navbar">
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact-me">Contact me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section id="home">
+        <div class="Home">
+          <div class="image">
+            <img class="foto" src="./images/myself.jpg" alt="Deep Patel" />
+          </div>
+          <div class="about-me">
+            <h2>Deep Patel</h2>
+            <p>
+              Hello, My name is Deep Patel. Currently I am a full-time student
+              student from India and am pursuing advanced diploma in Computer
+              Programming and Analysis at Seneca College.This is a website about
+              Myself for the Final assessment of my course WEB222.
+            </p>
+          </div>
+          <div class="btn">
+            <a href="Resume.pdf" download="Deep Patel- Resume"
+              ><button><i class="fa fa-download"></i>Resume</button></a
+            >
+            <a href="#contact-me"><button>Contact me</button></a>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <h1>Some Information About me</h1>
+        <div class="sections">
+          <div class="honesty">
+            <h2>About me and Academic Honesty</h2>
+            <p>
+              I declare that my assessment is wholly my own work in accordance
+              with Seneca Academic Policy. No part of this assessment has been
+              copied manually or electronically from any other source (including
+              web sites) except for the information supplied by the WEB222
+              instructors and / or made available in this assessment for my use. I
+              also declare that no part of this assignment has been distributed to
+              other students.
+            </p>
+            <p>
+              <span><strong>Date:</strong></span> August 9,2022
+            </p>
+          </div>
+          <div class="info">
+            <h2>Basic information</h2>
+            <div class="infocontainer">
+              <div class="tag">
+                <ul>
+                  <li>NAME:</li>
+                  <li>AGE:</li>
+                  <li>EMAIL:</li>
+                  <li>LANGUAGE:</li>
+                  <li>CLASS SECTION:</li>
+                  <li>STUDENT ID:</li>
+                  <li>INSTRUCTOR:</li>
+                </ul>
+              </div>
+              <div class="desc">
+                <ul>
+                  <li>Deep Patel</li>
+                  <li>19</li>
+                  <li>dpatel425@myseneca.ca</li>
+                  <li>English, Gujarati, Hindi</li>
+                  <li>NEE</li>
+                  <li>151376217</li>
+                  <li>Noman Atique</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section id="education">
+        <h1 class="education">Education</h1>
+        <div class="edu">
+          <div class="edu1">
+            <img src="./images/icon.jpg" alt="symbol" />
+            <h3>High School Degree</h3>
+            <h4>Bright School, GSEB</h4>
+            <p>Science Stream</p>
+            <span>2020-2021</span>
+          </div>
+          <div class="edu2">
+            <img src="./images/icon.jpg" alt="symbol" />
+            <h3>Advanced Diploma</h3>
+            <h4>Seneca College</h4>
+            <p>Computer Programming and Analysis</p>
+            <span>Jan 2022- Aug 2024(expected)</span>
+          </div>
+        </div>
+      </section>
+      <section id="contact-me">
+        <h1 class="contact">Contact me</h1>
+        <div>
+          <form id="form" method="post" action="https://httpbin.org/post " onsubmit="return validate()">
+            <div class="row">
+              <div class="col1">
+                <label for="name">Name</label>
+              </div>
+              <div class="col2">
+                <input
+                  type="text"
+                  name="Name"
+                  placeholder="Your Name.."
+                  required
+                />
+              </div>
+            </div>
+  
+            <div class="row">
+              <div class="col1">
+                <label for="email">Email Address</label>
+              </div>
+              <div class="col2">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email..."
+                  required
+                />
+              </div>
+            </div>
+  
+            <div class="row">
+              <div class="col1">
+                <label for="Phone number">Phone number</label>
+              </div>
+              <div class="col2">
+                <input
+                  type="tel"
+                  name="Phone Number"
+                  placeholder="Your Phone Number....."
+                  required
+                />
+              </div>
+            </div>
+  
+            <div class="row">
+              <div class="col1">
+                <label for="address">Address</label>
+              </div>
+              <div class="col2">
+                <input
+                  type="text"
+                  name="Address"
+                  placeholder="Your Address..."
+                  required
+                />
+              </div>
+            </div>
+  
+            <div class="row">
+              <div class="col1">
+                <label for="city">City</label>
+              </div>
+              <div class="col2">
+                <input type="text" name="city" list="suggestions" placeholder="Enter your City"  required/>
+                <datalist id="suggestions">
+                  <option value="Toronto">Toronto</option>
+                  <option value="Quebec">Quebec</option>
+                  <option value="Montreal">Montreal</option>
+                  <option value="Niagra Falls">Niagra Falls</option>
+                  <option value="Brampton">Brampton</option>
+                  <option value="Mississauga">Mississauga</option>
+                  <option value="Kitchener">Kitchener</option>
+                  <option value="Vaughan">Vaughan</option>
+                  <option value="Windsor">Windsor</option>
+                  <option value="Vancouver">Vancouver</option>
+                  <option value="Calgary">Calgary</option>
+                  <option value="Halifax">Halifax</option>
+                  <option value="Ottawa">Ottawa</option>
+                  <option value="Winnipeg">Winnipeg</option>
+                  <option value="Victoria">Victoria</option>
+                  <option value="St Jhon's">St Jhon's</option>
+                </datalist>
+              </div>
+            </div>
+  
+            <div class="row">
+              <div class="col1">
+                <label for="Postal">Postal Code</label>
+              </div>
+              <div class="col2">
+                <input
+                  type="text"
+                  name="Postal"
+                  placeholder="A1B 2C3"
+                  onsubmit="validate();"
+                  required
+                />
+              </div>
+            </div>
+  
+            <div class="radio-btn">
+              <h4>Purpose</h4>
+              <input
+                type="radio"
+                id="que"
+                name="opt"
+                value="Questions?"
+                checked
+                onclick="COQ();"
+              />
+              <label for="que">Questions</label><br />
+              <input
+                type="radio"
+                id="comment"
+                name="opt"
+                value="Comments"
+                onclick="COQ();"
+              />
+              <label for="comment">Comment</label><br />
+              <input
+                type="radio"
+                id="hire"
+                name="opt"
+                value="Hiring"
+                onclick="hiring();"
+              />
+              <label for="hire">Hiring</label><br />
+            </div>
+  
+            <div class="row">
+              <div class="col1">
+                <div id="hire_rate"></div>
+              </div>
+              <div class="col2">
+                <div id="rate"></div>
+              </div>
+            </div>
+  
+            <div class="row">
+              <div class="col1">
+                <label for="Message">Message</label>
+              </div>
+              <div class="col2">
+                <textarea
+                  name="Message"
+                  placeholder="Your message.."
+                  style="height: 200px"
+                ></textarea>
+              </div>
+            </div>
+  
+            <div class="butn">
+              <input type="submit" value="Submit" />
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
