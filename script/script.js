@@ -1,12 +1,20 @@
 function validate() {
   if (
-    /[A-Za-z]\d[A-Za-z] ?\d[A-Za-z]\d/.test(
-      document.getElementById("form").Postal.value
+    /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/.test(
+      document.getElementById("form").email.value
     )
   ) {
-    return true;
+    if (
+      /[A-Za-z]\d[A-Za-z] ?\d[A-Za-z]\d/.test(
+        document.getElementById("form").Postal.value
+      )
+    ) {
+      return true;
+    }
+    alert("Invalid Postal Code!");
+    return false;
   }
-  alert("Invalid Postal Code!");
+  alert("Invalid email address!");
   return false;
 }
 
@@ -26,7 +34,7 @@ function hiring() {
   row2.appendChild(input);
 }
 
-function COQ() {
+function CommentOrQuestion() {
   var row = document.getElementById("hire_rate");
   row.innerHTML = "";
 
