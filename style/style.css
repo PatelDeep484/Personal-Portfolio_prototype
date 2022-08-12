@@ -330,7 +330,7 @@
   }
   .sections {
     display: block;
-    margin: 30px;
+    margin: 0px 2rem;
   }
   .honesty,
   .info {
@@ -362,11 +362,12 @@
   }
   .edu {
     display: block;
+    padding: 2rem;
   }
   .edu1,
   .edu2 {
     padding: 1rem;
-    margin: 2rem;
+    margin: 1rem;
   }
 
   .education {
