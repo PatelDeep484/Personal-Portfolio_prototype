@@ -11,7 +11,7 @@
  *      Student ID: 151376217
  *      Email:      dpatel425@myseneca.ca
  *      Section:    NEE
- *      Date:       12/08/2022
+ *      Date:       12/08/22
  */
 
 function validate() {
