@@ -21,8 +21,26 @@
   margin: 0px;
   padding: 0px;
 }
-body {
+#contact-me {
   background-image: url("../images/background1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#home {
+  background-image: url("../images/main.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#about {
+  background-image: url("../images/about.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#education {
+  background-image: url("../images/education.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -74,9 +92,12 @@ body {
 .about-me h2 {
   font-weight: bold;
   font-size: 50px;
+  color: burlywood;
   font-family: "Josefin Sans", sans-serif;
 }
 .about-me p {
+  color: whitesmoke;
+  padding-top: 1rem;
   font-size: 25px;
   font-family: "Source Serif Pro", serif;
 }
@@ -95,7 +116,7 @@ body {
   cursor: pointer;
 }
 .btn button:hover {
-  color: rgb(76, 0, 255);
+  color: rgb(9, 232, 252);
   background-color: transparent;
 }
 .btn i {
