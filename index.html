@@ -128,157 +128,150 @@
         </div>
       </section>
       <section id="contact-me">
-        <h1 class="contact">Contact me</h1>
+        <h1 class="contact">Add Employee</h1>
         <div>
           <form id="form" method="post" action="https://httpbin.org/post " onsubmit="return validate()">
-            <div class="row">
+            <div class="row1">
               <div class="col1">
-                <label for="name">Name</label>
+                <label for="firstName">First Name</label>
               </div>
               <div class="col2">
-                <input
-                  type="text"
-                  name="Name"
-                  placeholder="Your Name.."
-                  required
-                />
+                <input id="firstName" name="firstName" type="text" />
+              </div>
+            </div>
+            <div class="row1">
+              <div class="col1">
+            <label for="last_name">Last Name</label>
+              </div>
+              <div class="col2">
+            <input id="lastName" name="lastName" type="text" />
               </div>
             </div>
   
-            <div class="row">
+            <div class="row1">
               <div class="col1">
-                <label for="email">Email Address</label>
+                <label for="email">Email</label>
               </div>
               <div class="col2">
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Your Email..."
-                  required
-                />
+                <input id="email" name="email" type="email" />
               </div>
             </div>
-  
-            <div class="row">
+            <div class="row1">
               <div class="col1">
-                <label for="Phone number">Phone number</label>
+            <label for="SSN">Social Security Number (SSN):</label>
               </div>
               <div class="col2">
-                <input
-                  type="tel"
-                  name="Phone Number"
-                  placeholder="Your Phone Number....."
-                  required
-                />
+                <input id="SSN" name="SSN" type="text" />
               </div>
             </div>
-  
-            <div class="row">
+            <div class="row1">
               <div class="col1">
-                <label for="address">Address</label>
+            <label for="addressStreet">Address:</label>
               </div>
               <div class="col2">
-                <input
-                  type="text"
-                  name="Address"
-                  placeholder="Your Address..."
-                  required
-                />
+                <input id="addressStreet" name="addressStreet" type="text" />
               </div>
             </div>
-  
-            <div class="row">
+            <div class="row1">
               <div class="col1">
-                <label for="city">City</label>
+                <label for="addressCity">City:</label>
               </div>
               <div class="col2">
-                <input type="text" name="city" list="suggestions" placeholder="Enter your City"  required/>
-                <datalist id="suggestions">
-                  <option value="Toronto">Toronto</option>
-                  <option value="Quebec">Quebec</option>
-                  <option value="Montreal">Montreal</option>
-                  <option value="Niagra Falls">Niagra Falls</option>
-                  <option value="Brampton">Brampton</option>
-                  <option value="Mississauga">Mississauga</option>
-                  <option value="Kitchener">Kitchener</option>
-                  <option value="Vaughan">Vaughan</option>
-                  <option value="Windsor">Windsor</option>
-                  <option value="Vancouver">Vancouver</option>
-                  <option value="Calgary">Calgary</option>
-                  <option value="Halifax">Halifax</option>
-                  <option value="Ottawa">Ottawa</option>
-                  <option value="Winnipeg">Winnipeg</option>
-                  <option value="Victoria">Victoria</option>
-                  <option value="St Jhon's">St Jhon's</option>
-                </datalist>
+                <input id="addressCity" name="addressCity" type="text" />
               </div>
             </div>
-  
-            <div class="row">
+            <div class="row1">
               <div class="col1">
-                <label for="Postal">Postal Code</label>
+                <label for="addressState">State:</label>
               </div>
               <div class="col2">
-                <input
-                  type="text"
-                  name="Postal"
-                  placeholder="A1B 2C3"
-                  onsubmit="validate();"
-                  required
-                />
+                <input id="addressState" name="addressState" type="text" />
               </div>
             </div>
-  
-            <div class="radio-btn">
-              <h4>Purpose</h4>
-              <input
-                type="radio"
-                id="que"
-                name="opt"
-                value="Questions?"
-                checked
-                onclick="CommentOrQuestion();"
-              />
-              <label for="que">Questions</label><br />
-              <input
-                type="radio"
-                id="comment"
-                name="opt"
-                value="Comments"
-                onclick="CommentOrQuestion();"
-              />
-              <label for="comment">Comment</label><br />
-              <input
-                type="radio"
-                id="hire"
-                name="opt"
-                value="Hiring"
-                onclick="hiring();"
-              />
-              <label for="hire">Hiring</label><br />
-            </div>
-  
-            <div class="row">
+            <div class="row1">
               <div class="col1">
-                <div id="hire_rate"></div>
+                <label for="addressPostal">ZIP Code:</label>
               </div>
               <div class="col2">
-                <div id="rate"></div>
+                <input id="addressPostal" name="addressPostal" type="text" />
               </div>
             </div>
-  
-            <div class="row">
+            <div class="row1">
               <div class="col1">
-                <label for="Message">Message</label>
+                <label for="isManager">Manager:</label>
               </div>
               <div class="col2">
-                <textarea
-                  name="Message"
-                  placeholder="Your message.."
-                  style="height: 200px"
-                ></textarea>
+                <input type="checkbox" name="isManager" />
               </div>
             </div>
+            <div class="row1">
+              <div class="col1">
+                <label for="employeeManagerNum">Manager's Number:</label>
+              </div>
+              <div class="col2">
+                <input id="employeeManagerNum" name="employeeManagerNum" type="number" />
+              </div>
+            </div>
+            <div class="row1">
+              <div class="col1">
+                <label>Status:</label>
+              </div>
+              <div class="col2">
+                <label class="checkbox-inline">
+                  <input
+                    type="radio"
+                    id="statusFT"
+                    name="status"
+                    value="Full Time"
+                  />
+                  Full Time
+                </label>
+                <label class="checkbox-inline">
+                  <input
+                    type="radio"
+                    id="statusFT"
+                    name="status"
+                    value="Part Time"
+                  />
+                  Part Time
+                </label>
+              </div>
+            </div>
+            <div class="row1">
+              <div class="col1">
+                <label for="department">Department</label>
+              </div>
+              <div class="col2">
+                <select name="department" id="department">
+                  <option value="1">Creative Services</option>
+                  <option value="2">Product Development</option>
+                  <option value="3">Marketing</option>
+                  <option value="4">Strategic Planning</option>
+                  <option value="5">Accounting</option>
+                  <option value="6">Human Resources</option>
+                  <option value="7">Quality Analysis</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row1">
+              <div class="col1">
+                <label for="hireDate">Hire Date</label>
+              </div>
+              <div class="col2">
+                <input id="hireDate" name="hireDate" type="date" />
+              </div>
+            </div>
+            
+
+
+
+
+
+
+
+
+            
   
             <div class="butn">
               <input type="submit" value="Submit" />
